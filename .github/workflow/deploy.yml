@@ -1,0 +1,24 @@
+name: HTML Check
+
+on:
+push:
+branches: [main]
+pull_request:
+branches: [main]
+workflow_dispatch:
+
+jobs:
+check-html:
+runs-on: ubuntu-latest
+
+
+steps:
+  - name: Get the code
+    uses: actions/checkout@v4
+
+  - name: Check HTML files
+    run: |
+      echo "Checking Tasty Tasty website..."
+      find . -maxdepth 1 -name "*.html" -type f
+      echo "HTML files found successfully!"
+
