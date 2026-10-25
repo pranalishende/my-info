@@ -4,89 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="Pranali Shende is a Computer Engineering student learning web development and building thoughtful projects.">
+    <title>Pranali Shende | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-
-<!-- Navigation Bar -->
 <header>
-    <h2>My Portfolio</h2>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="Pranali Shende home">
+            <span class="brand-mark">P</span>
+            <span>Pranali<span class="brand-accent">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="site-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+    </div>
 </header>
 
-<!-- Home Section -->
+<main>
 <section id="home" class="home">
-    <div>
-        <h1>Hello, I'm Pranali Shende!</h1>
-        <h2>Computer Engineering Student</h2>
-        <p>I am learning web development and programming.</p>
-        <a href="#about" class="btn">Know More</a>
+    <div class="hero-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Computer Engineering Student</p>
+        <h1>Hello, I'm<br><span>Pranali Shende.</span></h1>
+        <p class="hero-copy">I’m learning web development and programming, and I enjoy turning ideas into useful, thoughtful projects.</p>
+        <div class="hero-actions">
+            <a href="#about" class="btn">Get to know me <span aria-hidden="true">↓</span></a>
+            <a href="#projects" class="text-link">Explore my work <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span> Curious mind. Building one step at a time.</div>
+    </div>
+    <div class="hero-art reveal" aria-label="Decorative profile illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+            <div class="profile-top"><span class="profile-label">A LITTLE ABOUT ME</span><span class="sparkle" aria-hidden="true">✳</span></div>
+            <div class="monogram">PS</div>
+            <p class="profile-name">Pranali Shende</p>
+            <p class="profile-role">Learning · Creating · Growing</p>
+            <div class="profile-footer"><span>Nagpur, Maharashtra</span><span class="profile-arrow" aria-hidden="true">↗</span></div>
+        </div>
+        <span class="floating-chip chip-code"><span aria-hidden="true">&lt;/&gt;</span> learning to code</span>
+        <span class="floating-chip chip-idea"><span aria-hidden="true">✦</span> ideas in progress</span>
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        Hello! My name is Pranali. I am a Computer Engineering student.
-        I enjoy learning new technologies, creating websites, and
-        developing interesting projects.
-    </p>
+<section id="about" class="section about-section">
+    <div class="section-heading reveal">
+        <p class="eyebrow">A bit about me</p>
+        <h2>Curious by nature,<br><span>builder by choice.</span></h2>
+    </div>
+    <div class="about-copy reveal">
+        <p>Hello! My name is Pranali. I am a Computer Engineering student who enjoys learning new technologies, creating websites, and developing interesting projects.</p>
+        <p>Every project is a chance to learn something new. I’m exploring web development and programming while building a foundation for the ideas I want to bring to life.</p>
+        <a href="#contact" class="text-link">Let’s connect <span aria-hidden="true">↗</span></a>
+    </div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills" class="section">
-    <h2>My Skills</h2>
+<section id="skills" class="section skills-section">
+    <div class="section-heading centered-heading reveal">
+        <p class="eyebrow">Tools in my toolkit</p>
+        <h2>Learning, <span>one skill at a time.</span></h2>
+        <p class="section-intro">The technologies I’m exploring as I grow as a developer.</p>
+    </div>
     <div class="skills">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">Python</div>
-        <div class="card">JavaScript</div>
+        <div class="card skill-card reveal"><span class="skill-icon html-icon" aria-hidden="true">&lt;/&gt;</span><span>HTML</span><span class="skill-number">01</span></div>
+        <div class="card skill-card reveal"><span class="skill-icon css-icon" aria-hidden="true">✳</span><span>CSS</span><span class="skill-number">02</span></div>
+        <div class="card skill-card reveal"><span class="skill-icon python-icon" aria-hidden="true">Py</span><span>Python</span><span class="skill-number">03</span></div>
+        <div class="card skill-card reveal"><span class="skill-icon js-icon" aria-hidden="true">JS</span><span>JavaScript</span><span class="skill-number">04</span></div>
     </div>
 </section>
 
-<!-- Projects Section -->
 <section id="projects" class="section">
-    <h2>My Projects</h2>
+    <div class="section-heading projects-heading reveal">
+        <div>
+            <p class="eyebrow">Things I’ve been working on</p>
+            <h2>Selected <span>projects.</span></h2>
+        </div>
+        <p class="section-intro">Ideas that bring technology a little closer to everyday life.</p>
+    </div>
     <div class="projects">
-        <div class="card">
+        <article class="card project-card reveal">
+            <div class="project-meta"><span>01 / STUDENT LIFE</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-symbol timetable-symbol" aria-hidden="true">◷</div>
             <h3>Smart timetable management and notification system</h3>
             <p>An AI project that manages timetables and sends notifications.</p>
-        </div>
-
-        <div class="card">
+            <span class="project-tag">AI · Productivity</span>
+        </article>
+        <article class="card project-card reveal">
+            <div class="project-meta"><span>02 / AGRICULTURE</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-symbol agriculture-symbol" aria-hidden="true">✳</div>
             <h3>Smart Agriculture pesticides monitoring system</h3>
             <p>A mobile application for monitoring pesticide usage in agriculture.</p>
-        </div>
-
-        <div class="card">
+            <span class="project-tag">Mobile · Monitoring</span>
+        </article>
+        <article class="card project-card reveal">
+            <div class="project-meta"><span>03 / THE WEB</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-symbol portfolio-symbol" aria-hidden="true">&lt;/&gt;</div>
             <h3>Personal Portfolio</h3>
             <p>A website to showcase my skills and projects.</p>
-        </div>
+            <span class="project-tag">HTML · CSS · JavaScript</span>
+        </article>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email: pranali@example.com</p>
-    <p>Location: Nagpur, Maharashtra</p>
-    <a href="mailto:pranali@example.com" class="btn">Send Email</a>
+<section id="contact" class="section contact-section">
+    <div class="contact-card reveal">
+        <div class="contact-copy">
+            <p class="eyebrow">Have an idea in mind?</p>
+            <h2>Let’s make<br><span>something meaningful.</span></h2>
+            <p>I’m always happy to connect, learn, and talk about ideas or projects.</p>
+            <a href="mailto:pranali@example.com" class="btn">Say hello <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-details">
+            <div class="contact-detail"><span class="detail-label">EMAIL</span><a href="mailto:pranali@example.com">pranali@example.com <span aria-hidden="true">↗</span></a></div>
+            <div class="contact-detail"><span class="detail-label">LOCATION</span><span>Nagpur, Maharashtra</span></div>
+            <div class="contact-stamp" aria-hidden="true">LET’S<br>CONNECT<span>✳</span></div>
+        </div>
+    </div>
 </section>
+</main>
 
-<!-- Footer -->
 <footer>
-    <p>© 2026 Pranali Shende | My Personal Website</p>
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">P</span><span>Pranali<span class="brand-accent">.</span></span></a>
+    <p>Designed with curiosity & care.</p>
+    <p>© <span id="current-year">2026</span> Pranali Shende</p>
 </footer>
-
 
 </body>
 </html>
