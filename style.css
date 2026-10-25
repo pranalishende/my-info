@@ -1,0 +1,164 @@
+/* Basic Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background-color: #f5f5ff;
+color: #333;
+}
+
+/* Navigation Bar */
+header {
+background-color: #6c63ff;
+color: white;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 15px;
+font-size: 16px;
+}
+
+nav a:hover {
+color: #ffe082;
+}
+
+/* Home Section */
+.home {
+min-height: 400px;
+display: flex;
+align-items: center;
+padding: 60px 10%;
+background: linear-gradient(135deg, #e0dcff, #ffffff);
+}
+
+.home h1 {
+font-size: 40px;
+color: #5145cd;
+margin-bottom: 15px;
+}
+
+.home h2 {
+font-size: 24px;
+margin-bottom: 15px;
+}
+
+.home p {
+margin-bottom: 25px;
+}
+
+/* Button */
+.btn {
+display: inline-block;
+background-color: #6c63ff;
+color: white;
+padding: 12px 25px;
+text-decoration: none;
+border-radius: 6px;
+margin-top: 10px;
+}
+
+.btn:hover {
+background-color: #5145cd;
+}
+
+/* Common Sections */
+.section {
+padding: 60px 10%;
+text-align: center;
+}
+
+.section h2 {
+color: #5145cd;
+font-size: 30px;
+margin-bottom: 25px;
+}
+
+.section p {
+line-height: 1.8;
+}
+
+/* Skills and Projects */
+.skills,
+.projects {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 25px;
+}
+
+.card {
+background-color: white;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+flex: 1 1 180px;
+max-width: 300px;
+transition: transform 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.projects .card h3 {
+color: #5145cd;
+margin-bottom: 12px;
+}
+
+/* Contact Section */
+#contact {
+background-color: #eae8ff;
+}
+
+/* Footer */
+footer {
+background-color: #29264d;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+header {
+justify-content: center;
+text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 8px;
+}
+
+.home h1 {
+    font-size: 30px;
+}
+
+.home h2 {
+    font-size: 20px;
+}
+
+.section {
+    padding: 40px 6%;
+}
+
+
+}
